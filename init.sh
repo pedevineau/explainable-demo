@@ -1,6 +1,6 @@
 #!/bin/sh
 
-WORK_DIR=/home/jovyan/work
+WORK_DIR=/home/onyxia/work
 CLONE_DIR=${WORK_DIR}/explainable-demo
 ENV_DIR=${WORK_DIR}/explainable-env
 # Clone course repository
