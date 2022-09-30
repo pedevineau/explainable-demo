@@ -40,7 +40,7 @@ last_performance_bias_control = None
 
 # Print bilan of 
 full_report = {
-    "audit_date": audit_date,
+    "audit_date": str(audit_date),
     "prod_data_source": prod_data_source,
     "training_data_source": training_data_source,
     "used_model_source": used_model_source,
@@ -51,11 +51,11 @@ full_report = {
     "explicit_rule": explicit_rule,
     "explanation_scope": explanation_scope,
     "explanation_recipient": explanation_recipient,
-    "last_social_bias_control": last_social_bias_control,
-    "last_performance_bias_control": last_performance_bias_control
+    "last_social_bias_control": str(last_social_bias_control),
+    "last_performance_bias_control": str(last_performance_bias_control)
 }
 print(f"Full report: \n {full_report}")
 
 import json
-with open(f"{project_name}-{project_version}-str(audit-date)}", "w") as f:
+with open(f"{project_name}-{project_version}-{str(audit_date)}", "w") as f:
     json.dump(full_report, f)
