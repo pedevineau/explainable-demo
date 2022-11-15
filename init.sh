@@ -22,4 +22,4 @@ REQUIREMENTS_FILE=${CLONE_DIR}/requirements.txt
 # Remove course Git repository
 #rm -r $CLONE_DIR
 
-chown ${SESSION} -R /home/${SESSION}/ # Otherwise jovyan has no rights on the local repo folder.
+sudo chown ${SESSION} -R /home/${SESSION}/ # Otherwise onyxia user has no rights on the local repo folder.
