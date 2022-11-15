@@ -9,7 +9,7 @@ REPO_URL=https://github.com/pedevineau/explainable-demo.git
 git clone --depth 1 $REPO_URL $CLONE_DIR
 
 pip install virtualenv p2j
-p2j ${CLONE_DIR}/book.py -t ${CLONE_DIR}/book.ipynb
+p2j ${CLONE_DIR}/frame.py -t ${CLONE_DIR}/frame.ipynb
 virtualenv $ENV_DIR
 source ${ENV_DIR}/bin/activate
 
