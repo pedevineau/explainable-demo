@@ -6,7 +6,7 @@ CLONE_DIR=${WORK_DIR}/explainable-demo
 ENV_DIR=${WORK_DIR}/explainable-env
 # Clone course repository
 REPO_URL=https://github.com/pedevineau/explainable-demo.git
-EXAMPLE_URL=https://github.com/nantesmetropole/school_meal_forecast_xgboost.git
+EXAMPLE_URL=https://github.com/pedevineau/school_meal_forecast_xgboost.git
 
 git clone --depth 1 $REPO_URL $CLONE_DIR
 git clone --depth 1 $EXAMPLE_URL ${CLONE_DIR}/example
