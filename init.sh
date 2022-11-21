@@ -19,16 +19,15 @@ git clone --depth 1 $EXAMPLE_URL ${CLONE_DIR}/example
 
 python3.7 -m pip install virtualenv p2j
 p2j ${CLONE_DIR}/frame.py -t ${CLONE_DIR}/frame.ipynb
-virtualenv $ENV_DIR
+python3.7 -m virtualenv $ENV_DIR
 source ${ENV_DIR}/bin/activate
 
 # Install additional packages if needed
 REQUIREMENTS_FILE=${CLONE_DIR}/requirements.txt
-[ -f $REQUIREMENTS_FILE ] && python3.7 -m pip install -r $REQUIREMENTS_FILE && rm $REQUIREMENTS_FILE
+REQUIREMENTS_EXAMPLE=${CLONE_DIR}/example/requirements.txt
+python3.7 -m pip install -r $REQUIREMENTS_FILE
+python3.7 -m pip install -r $REQUIREMENTS_EXAMPLE
 
 
-
-# Remove course Git repository
-#rm -r $CLONE_DIR
 # the last line is for onyxia
 # sudo chown ${SESSION} -R /home/${SESSION}/ # Otherwise onyxia user has no rights on the local repo folder.
