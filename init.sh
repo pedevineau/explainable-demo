@@ -1,7 +1,9 @@
 #!/bin/sh
 
+# change the session name and the working directory
 SESSION=onyxia
 WORK_DIR=/home/${SESSION}/work
+
 CLONE_DIR=${WORK_DIR}/explainable-demo
 ENV_DIR=${WORK_DIR}/explainable-env
 # Clone course repository
@@ -28,5 +30,5 @@ REQUIREMENTS_FILE=${CLONE_DIR}/requirements.txt
 
 # Remove course Git repository
 #rm -r $CLONE_DIR
-
-sudo chown ${SESSION} -R /home/${SESSION}/ # Otherwise onyxia user has no rights on the local repo folder.
+# the last line is for onyxia
+# sudo chown ${SESSION} -R /home/${SESSION}/ # Otherwise onyxia user has no rights on the local repo folder.
