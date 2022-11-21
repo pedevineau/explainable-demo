@@ -11,14 +11,18 @@ EXAMPLE_URL=https://github.com/pedevineau/school_meal_forecast_xgboost.git
 git clone --depth 1 $REPO_URL $CLONE_DIR
 git clone --depth 1 $EXAMPLE_URL ${CLONE_DIR}/example
 
-pip install virtualenv p2j
+# python3.7 is used for the sake of the demo on canteens, but it is not needed for the other source codes
+# at this point install python3.7 and python3.7-distutils for your host. Example for debian/ubuntu below:
+# sudo apt install python3.7 python3.7-distutils
+
+python3.7 -m pip install virtualenv p2j
 p2j ${CLONE_DIR}/frame.py -t ${CLONE_DIR}/frame.ipynb
 virtualenv $ENV_DIR
 source ${ENV_DIR}/bin/activate
 
 # Install additional packages if needed
 REQUIREMENTS_FILE=${CLONE_DIR}/requirements.txt
-[ -f $REQUIREMENTS_FILE ] && pip install -r $REQUIREMENTS_FILE && rm $REQUIREMENTS_FILE
+[ -f $REQUIREMENTS_FILE ] && python3.7 -m pip install -r $REQUIREMENTS_FILE && rm $REQUIREMENTS_FILE
 
 
 
