@@ -1,14 +1,14 @@
 #!/bin/sh
 
-# change the session name and the working directory
+# change the session name and the working directory if necessary
 SESSION=onyxia
 WORK_DIR=/home/${SESSION}/work
 
 CLONE_DIR=${WORK_DIR}/explainable-demo
 ENV_DIR=${WORK_DIR}/explainable-env
 # Clone course repository
-REPO_URL=https://github.com/pedevineau/explainable-demo.git
-EXAMPLE_URL=https://github.com/pedevineau/school_meal_forecast_xgboost.git
+REPO_URL=git@github.com:pedevineau/explainable-demo.git
+EXAMPLE_URL=git@github.com:pedevineau/school_meal_forecast_xgboost.git
 
 git clone --depth 1 $REPO_URL $CLONE_DIR
 git clone --depth 1 $EXAMPLE_URL ${CLONE_DIR}/example
@@ -30,4 +30,4 @@ python3.7 -m pip install -r $REQUIREMENTS_EXAMPLE
 
 
 # the last line is for onyxia
-# sudo chown ${SESSION} -R /home/${SESSION}/ # Otherwise onyxia user has no rights on the local repo folder.
+sudo chown ${SESSION} -R /home/${SESSION}/ # Otherwise onyxia user has no rights on the local repo folder.
