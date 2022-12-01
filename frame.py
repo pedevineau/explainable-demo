@@ -25,6 +25,10 @@ scholar_reference = (
 # Citation: what is the license of the model?
 license_model_uri = "Insert Link of the license"
 
+# Legal limitation on some (generally accepted) re-uses 
+# (example: if the model is trained on legally-protected data, its re-uses are restricted)
+legal_reuses_limitation = "Is there specific reasons preventing the model from being used for normally lawful uses?"
+
 # -------------------- MODEL SOURCES --------------------
 
 # Import model: Have you published your final model somewhere?
@@ -60,7 +64,6 @@ model_run_command = """
 python3.10 predict_demo.py
 ```
 """
-
 
 # Technical recommendations: what should the model be used for?
 intended_uses = [
@@ -145,6 +148,7 @@ full_report = OrderedDict(
         "Model Developers": maintainers,
         "Model Team contact": contact,
         "Model License": license_model_uri,
+        "Possible legal restrictions": legal_reuses_limitation,
         "Scholar Reference": scholar_reference,
         "Model Area": model_area,
         "Model Type": model_type,
