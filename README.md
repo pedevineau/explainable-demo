@@ -10,9 +10,20 @@ Voir le [guide de contribution](CONTRIBUTING.md)
 
 A compléter
 
-## Projets open source liés à ce dépôt
+## Motivations
 
-A compléter
+Rendre le modèle transparent au grand public ne se limite pas à l’analyse d’explicabilité, mais repose sur une suite d’exigences à respecter tout au long de la chaîne de traitement, parmi lesquelles sans exhaustivité :
+
+- La publication des codes sources des traitements effectués
+- La constitution d’une documentation décrivant précisément les hypothèses implicites de la chaîne de traitement
+- L’audit des données d’entrée utilisées lors de l’apprentissage et en production : sont-elles représentatives du cadre réel d’application du modèle ? Le seront-elles encore dans le futur ?
+- L’audit des poids du modèle
+- L’audit des prédictions de son modèle : comprend-t-il un biais systématique que je souhaite combattre ? Comment diagnostiquer et mesurer vis-à-vis de tel ou tel groupe ?
+- L’anticipation des possibles risques de fuite de données personnelles
+- 
+## Projets open source et articles liés à ce dépôt
+
+[Model Cards for Model Reporting, *Mitchell et alii (2019)*](https://arxiv.org/abs/1810.03993)
 
 ## Contact
 
