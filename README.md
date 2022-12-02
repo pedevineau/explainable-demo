@@ -1,6 +1,6 @@
 # explainable-demo
 
-Un dépôt pour proposer une "Carte de modèle" lors de chaque partage d'un modèle (ces cartes de modèles seraient versionnées et retranscriraient l'évolution du modèle), pour faciliter sa réutilisation et améliorer la qualité des réutilisations.
+Un dépôt pour proposer et générer une "Carte de modèle" lors de chaque partage d'un modèle (ces cartes de modèles seraient versionnées et retranscriraient l'évolution du modèle), afin de faciliter sa réutilisation et améliorer la qualité des réutilisations.
 
 ## Coment contribuer
 
