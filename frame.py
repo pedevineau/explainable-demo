@@ -34,6 +34,9 @@ legal_reuses_limitation = "Is there specific reasons preventing the model from b
 # Import model: Have you published your final model somewhere?
 final_model_uri = ""  # unpublished
 
+# Import model: If the model is not published yet, do you consider publishing it in the future?
+will_be_published = False
+
 # Import model: Do you rely on a (or several) published model? If true, what is the exact path and the exact name ?
 used_upstream_model_source = [
     "URI of the model component 1",
@@ -46,6 +49,9 @@ used_upstream_model_names = [
 
 # Import model: What is the area of the model: computer vision, nlp, time series, graphs, speech, etc?
 model_area = "".upper()
+# Import model: What is the category of the model: question-answering, objet tracking, image classification, etc. ? 
+# this concept of "category" draws from the webiste paperswithcode
+model_category = "".upper()
 
 # Import model: What is the type of the model: classification, regression, clustering, etc. ?
 model_type = "".upper()
@@ -151,10 +157,12 @@ full_report = OrderedDict(
         "Possible legal restrictions": legal_reuses_limitation,
         "Scholar Reference": scholar_reference,
         "Model Area": model_area,
+        "Model Category": model_category,
         "Model Type": model_type,
         "Intended uses of the model": intended_uses,
         "Not-intended use": not_intended_uses,
         "Model Source": final_model_uri,
+        "If the model is not published yet, do you consider doing it in the future?": will_be_published,
         "Description of output of model": output_description,
         "Model requirements": model_requirements,
         "How to run the model": model_run_command,
