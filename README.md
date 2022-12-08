@@ -8,7 +8,7 @@ Voir le [guide de contribution](CONTRIBUTING.md)
 
 ## Méthodologie 
 
-A compléter
+Les champs proposés ici constituent un ensemble d'informatins utiles aux réutilisateurs futurs des modèles, pour leur indiquer la license du modèle, ses finalités et cas d'usage pertinents (ou non), son historique de conception, les choix de paramètres, les sources de données, le contact des équipes maintenant le modèle et le contact des équipes instanciant le modèle, etc.
 
 ## Motivations
 
@@ -20,7 +20,7 @@ Rendre le modèle transparent au grand public ne se limite pas à l’analyse d�
 - L’audit des poids du modèle
 - L’audit des prédictions de son modèle : comprend-t-il un biais systématique que je souhaite combattre ? Comment diagnostiquer et mesurer vis-à-vis de tel ou tel groupe ?
 - L’anticipation des possibles risques de fuite de données personnelles
-- 
+
 ## Projets open source et articles liés à ce dépôt
 
 [Model Cards for Model Reporting, *Mitchell et alii (2019)*](https://arxiv.org/abs/1810.03993)
