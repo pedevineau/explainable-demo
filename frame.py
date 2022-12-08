@@ -16,8 +16,7 @@ model_card_date = datetime.date.today()
 # -------------------- NAME AND CITATIONS --------------------
 project_name = "explainable-demo"  # Choose a project name
 project_version = "v1"  # If you have published several model releases, indicate the version number you are auditing.
-maintainers = ["Name of the persons or organisms in charge of the model"]
-contact = "contact@example.gouv.fr"
+
 # Citation: In case of scholar publication, what is the needed citation?
 scholar_reference = (
     "If a research paper has been published about the model, link the citation here"
@@ -28,6 +27,16 @@ license_model_uri = "Insert Link of the license"
 # Legal limitation on some (generally accepted) re-uses 
 # (example: if the model is trained on legally-protected data, its re-uses are restricted)
 legal_reuses_limitation = "Is there specific reasons preventing the model from being used for normally lawful uses?"
+
+# -------------------- CONTACT --------------------
+
+# Who are developing the model?
+maintainers = ["Name of the persons or organisms in charge of the model"]
+maintainers_contacts = ["contact@example.gouv.fr"]
+
+# Who are instianting the model (this version or another) ?
+instances = ["Names of the persons or organisms instantiating the model"]
+instances_contacts = ["instance_contact@example.gouv.fr"]
 
 # -------------------- MODEL SOURCES --------------------
 
@@ -152,10 +161,12 @@ full_report = OrderedDict(
         "Model Name and Version": project_name_version,
         "Model Card date": str(model_card_date),
         "Model Developers": maintainers,
-        "Model Team contact": contact,
+        "Model Team contacts": contacts,
         "Model License": license_model_uri,
         "Possible legal restrictions": legal_reuses_limitation,
         "Scholar Reference": scholar_reference,
+        "Instance Teams": instances,
+        "Instance Teams contacts": instances_contacts,
         "Model Area": model_area,
         "Model Category": model_category,
         "Model Type": model_type,
